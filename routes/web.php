@@ -35,9 +35,15 @@ use App\Http\Controllers\SiteController;
 // Route::get('/','SiteController@');
 
  
-Route::get('/aboutUs', [SiteController::class, 'About']);
+// Route::get('/aboutUs', [SiteController::class, 'About']);
 
-// Route::get("",'homePage');
+Route::get("/",function(){
+    return view('homePage');
+});      
+
+// Route::view("",'homePage');
+Route::view("aboutUs",'aboutUs');
+Route::view("contact",'contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
