@@ -35,7 +35,9 @@ use App\Http\Controllers\SiteController;
 // Route::get('/','SiteController@');
 
  
-Route::get('/about', [SiteController::class, 'About']);
+Route::get('/aboutUs', [SiteController::class, 'About']);
+
+// Route::get("",'homePage');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
